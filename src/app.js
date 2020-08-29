@@ -1,4 +1,4 @@
-import React from 'react';
-const App = () => <div>My react proper setup</div>;
+import React from 'react'
+const App = () => <div>My first react proper setup</div>
 
-export default App;
+export default App

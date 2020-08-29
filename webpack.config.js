@@ -7,7 +7,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    modules: ['node_modules', path.join(__dirname, 'src'), 'shared'],
+    modules: ['node_modules', path.join(__dirname, 'src')],
   },
   module: {
     rules: [
