@@ -4,14 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "test": "jest",
     "dev": "webpack-dev-server --mode=development",
     "build": "webpack --mode=production",
     "postbuild": "cp ./public/index.html ./dist/index.html",
     "start": "serve --no-clipboard --single --listen 8080 dist",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|css|html|md)\"",
     "lint": "eslint --ignore-path .gitignore .",
-    "validate": "npm run lint && npm run build",
-    "setup": "npm install && npm run validate"
+    "validate": "yarn run lint && yarn test  && yarn run build",
+    "setup": "yarn install && yarn run validate"
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",
@@ -26,6 +27,7 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0",
+    "jest": "^26.4.2",
     "prettier": "^2.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
