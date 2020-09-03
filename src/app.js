@@ -1,4 +1,12 @@
 import React from 'react'
-const App = () => <div>My first react proper setup</div>
+import styled from 'styled-components'
+
+const MainContent = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const App = () => <MainContent>My first react proper setup</MainContent>
 
 export default App
