@@ -12,7 +12,7 @@ export function FormComponent() {
         </div>
     )
 }
-export default function MainComponent() {
+export default function DependencyArray() {
     const [count, setCount] = useState(0)
     function handleClick() {
         setCount(count + 1);

@@ -1,8 +1,8 @@
 import React from 'react'
 import ClassComponent from './ClassComponent'
 import HookComponent from './HookComponent'
-import MainComponent from './dependencyArray'
+import DependencyArray from './dependencyArray'
 
-const App = () => (<div>React Application</div>)
+const App = () => (<div><DependencyArray /></div>)
 
 export default App
