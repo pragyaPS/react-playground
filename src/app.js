@@ -1,4 +1,8 @@
 import React from 'react'
-const App = () => <div>My first react proper setup</div>
+import ClassComponent from './ClassComponent'
+import HookComponent from './HookComponent'
+import MainComponent from './dependencyArray'
+
+const App = () => (<div>React Application</div>)
 
 export default App

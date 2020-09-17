@@ -9,6 +9,7 @@ module.exports = {
   resolve: {
     modules: ['node_modules', path.join(__dirname, 'src')],
   },
+  devtool:'source-map',
   module: {
     rules: [
       {
