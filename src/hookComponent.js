@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 export default function HookComponent(){
     const [flag, setFlag] = useState(false);
     function handleChange() {
@@ -13,4 +13,12 @@ export default function HookComponent(){
 };
 
 
-const TextComponent = () => (<div>Text Component</div>);
+const TextComponent = () => {
+    useEffect(() => {
+        console.log('mount');
+        return () => {
+            console.log('unmount');
+        }
+    })
+    
+    return (<div>Text Component</div>)};

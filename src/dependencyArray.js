@@ -5,6 +5,9 @@ export function FormComponent() {
     function handleChange(evt) {
         setFirstName(evt.target.value);
     }
+    useEffect(()=>{
+        console.log('FormComponent mounted');
+    }, [firstName])
     return (
         <div>
         <input value= { firstName } onChange={handleChange} />
